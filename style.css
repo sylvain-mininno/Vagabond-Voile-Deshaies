@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  max-height: 100vh;
+
+  background-color: #aad7ee;
+}
+
+header {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  color: rgb(23, 4, 94);
+  font-size: 6.5rem;
+  letter-spacing: 0.7rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  padding: 15px 0px;
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 0.5rem;
+  color: rgb(23, 4, 94);
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(60, 141, 216);
+  z-index: 1000;
+}
+
+nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Kaushan Script", cursive;
+}
+
+.presentation {
+  height: auto;
+  max-width: 100%;
+
+  position: relative;
+}
+.presentation img {
+  width: 100%;
+  height: auto;
+}
+
+.presentation p {
+  font-family: "Kaushan Script", cursive;
+
+  padding-left: 60px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 5px;
+}
+.detail {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.flo,
+.bateau {
+  max-width: 450px;
+  width: 90%;
+  max-height: 350px;
+  height: 90%;
+  margin: auto;
+}
+.flo img,
+.bateau img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: rgb(23, 4, 94);
+  margin: 50px 0;
+}
+.formules-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.formule {
+  border-radius: 30px;
+  text-align: center;
+  background: #1e7099;
+  max-width: 450px;
+  width: 70%;
+  height: auto;
+  max-height: 450px;
+  margin: 10px auto;
+}
+.formule p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 10px;
+}
+.sorties {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.Acces {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.carte {
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+.carte img {
+  width: 100%;
+  height: auto;
+}
+.deshaies {
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+.deshaies img {
+  width: 100%;
+  height: auto;
+}
+.rdv {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+.rdv p {
+  padding-top: 130px;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+}
+#contacts {
+  margin-top: 50px;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: auto;
+}
+.contacts-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.contacts p {
+  font-size: 1.6rem;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+i {
+  font-size: 2.2rem;
+}
+#whatsapp {
+  color: #208353;
+}
+
+#facebook {
+  color: #1a1eeb;
+}
+.contacts-detail img {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: -5px;
+}
+.contacts-detail a {
+  font-size: 1.6rem;
+  margin-left: 5px;
+  text-decoration: none;
+  color: rgb(15, 4, 56);
+}
+footer {
+  margin-top: 50px;
+  height: auto;
+  background-color: rgb(23, 4, 94);
+  text-align: center;
+}
+footer p {
+  padding: 10px 0;
+}
+.end {
+  color: white;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.end i {
+  color: white;
+  font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
+  .presentation p {
+    font-size: 1rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+  .formule p {
+    font-size: 1rem;
+    line-height: normal;
+  }
+  contact p {
+    font-size: 1.2rem;
+  }
+}
